@@ -16,11 +16,59 @@
 body {
     background-color: var(--background-color);
 }
+.logo {
+    width: 65px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding-top: 6px;
+    color: white;
+}
+header {
+    background-color: var(--navbar);
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    border-radius: 0px 0px 10% 10%;
+    padding: 0px 30px 0px 70px;
+    /* position: fixed;
+    top: 0; 
+    left:0;
+    right: 0;
+    overflow: hidden;
+    z-index: 100; */
+}
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+/* a:hover {
+    position: relative;
 
+    padding: 5px 20px;
+
+    border-radius: 20px;
+    box-shadow: inset 0px 2px 12px rgb(165, 41, 41);
+} */
+a:hover {
+    color: var(--navbar-text);
+}
+.profile{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+}
 .avatar{
-    width: 900px;
-    height: 300px;
-    margin: 30px auto 5px auto;
+    width: 1010px;
+    height: 330px;
+    margin: 30px 15rem 5px 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +91,6 @@ body {
         padding:15px;
         border-radius: 30px;
         border: 3px solid #480948;
-
     }
 .avatar .pic{
     border-radius: 50%;
@@ -56,61 +103,4 @@ body {
     font-size: 48px;
     color: #ffffff;
     box-shadow: 0px 0px 6px rgba(20, 20, 20, 0.6);
-}
-.hero {
-    width: 70%;
-    height: 450px;
-    position: relative;
-    margin: 80px auto;
-    overflow: hidden;
-}
-
-.buttonBox {
-    display: flex;
-    border-bottom: 1px solid var(--navbar-text);
-    width: auto;
-    justify-content: center;
-}
-.buttonBox button {
-    background: transparent;
-    color: var(--navbar);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    margin-right: 50px;
-    font-size: 30px;
-    font-weight: bold;
-}
-.buttonBox button:hover {
-    color: var(--navbar);
-}
-.contentRight img {
-    width: 350px;
-}
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2% auto;
-    position: absolute;
-    transform: translateX(100%);
-}
-
-.contentLeft {
-    flex-basis: 50%;
-}
-.contentLeft p {
-    font-size: 24px;
-    padding: 30px 0;
-}
-.contentRight {
-    flex-basis: 50%;
-    text-align: center;
-}
-#content1 {
-    transform: translateX(0px);
-}
-#btn1 {
-    color: var(--navbar-text);
 }

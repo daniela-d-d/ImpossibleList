@@ -87,26 +87,10 @@ a:hover {
 .svgandbutton{
     width: 280px;
 }
-<<<<<<< HEAD
 .svgandbutton img{
     transform: scale(-1,1);
     width: 100%;
     margin-left: 2rem;
-=======
-.registerButton button {
-    border: none;
-    width: 350px;
-    height: 90px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #FB7454;
-    border-radius: 5px;
-    /* box-shadow: 2px 5px 8px grey; */
-}
-.registerButton {
-    position: absolute;
-    padding-bottom: 200px; /* how to move??? */
->>>>>>> 5bc74fb005fb0ff213658136ab267f400ccd1124
 }
 .svgandbutton button {
     margin: 0;
