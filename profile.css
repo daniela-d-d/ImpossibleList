@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --main-color : #FF9F36;
+    --text-color: black;
+    --navbar: #fb8c4b;
+    --navbar-text: #5B4B92;
+    --background-color: #FBF3F3;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Serif JP', serif;
+}
+body {
+    background-color: var(--background-color);
+}
+.hero {
+    width: 70%;
+    height: 450px;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.buttonBox {
+    display: flex;
+    border-bottom: 1px solid var(--navbar-text);
+    width: auto;
+    justify-content: center;
+}
+.buttonBox button {
+    background: transparent;
+    color: var(--main-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.buttonBox button:hover {
+    color: var(--navbar);
+}
+.contentRight img {
+    width: 350px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    position: absolute;
+    transform: translateX(100%);
+}
+.contentLeft {
+    flex-basis: 50%;
+}
+.contentLeft p {
+    font-size: 24px;
+    padding: 30px 0;
+}
+.contentRight {
+    flex-basis: 50%;
+    text-align: center;
+}
+#content1 {
+    transform: translateX(0px);
+}
+#btn1 {
+    color: var(--navbar-text);
+}

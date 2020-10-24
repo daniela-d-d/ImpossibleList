@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css"/>
+    <title>Profile</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="buttonBox">
+            <button id="btn1" onclick="openBlog()">Blog</button>
+            <button id="btn2" onclick="openImpossibles()">Impossibles</button>
+            <button id="btn3" onclick="openTimeline()">Timeline</button>
+            <button id="btn4" onclick="openCompleted()">Completed</button>
+            <button id="btn5" onclick="openHistory()">History</button>
+        </div>
+<div id="content1" class="content">
+    <div class="contentLeft">
+        <h1>Blog posts</h1>
+        <p>Here you can share your progress - publicly, privately or even hide this option altogether!</p>
+    </div>
+    <div class="contentRight">
+        <img src="reaching-and-pointing.svg">
+    </div>
+</div>
+<div id="content2" class="content">
+    <div class="contentLeft">
+        <h1>Impossibles</h1>
+        <p>View and edit your personal list of Impossbiles - the tasks, goals and projects that will change your life!</p>
+        <!-- <p>Here you can share your progress - publicly, privately or even hide this option altogether!</p> -->
+    </div>
+    <div class="contentRight">
+        <img src="reaching-and-pointing.svg">
+    </div>
+</div>
+<div id="content3" class="content">
+    <div class="contentLeft">
+        <h1>Timeline</h1>
+        <p>Look through the timeline of your Impossibles! This text was added as I was too lazy to fix the problem.</p>
+        <!-- <p>Here you can share your progress - publicly, privately or even hide this option altogether!</p> -->
+    </div>
+    <div class="contentRight">
+        <img src="reaching-and-pointing.svg">
+    </div>
+</div>
+<div id="content4" class="content">
+    <div class="contentLeft">
+        <h1>Completed</h1>
+        <p>Review the completed Impossibles! More text as I am too tired to amend the code problem.</p>
+        <!-- <p>Here you can share your progress - publicly, privately or even hide this option altogether!</p> -->
+    </div>
+    <div class="contentRight">
+        <img src="reaching-and-pointing.svg">
+    </div>
+</div>
+<div id="content5" class="content">
+    <div class="contentLeft">
+        <h1>History</h1>
+        <p>View your history of blog posts, follows, Impossibles and other! This text needs to be a bit longer.</p>
+        <!-- <p>Here you can share your progress - publicly, privately or even hide this option altogether!</p> -->
+    </div>
+    <div class="contentRight">
+        <img src="reaching-and-pointing.svg">
+    </div>
+</div>
+    </div>
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var content4 = document.getElementById("content4");
+        var content5 = document.getElementById("content5");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        var btn5 = document.getElementById("btn5");
+
+        function openBlog() {
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            btn1.style.color = "#5B4B92"
+            btn2.style.color = "#FF9F36"
+            btn3.style.color = "#FF9F36"
+            btn4.style.color = "#FF9F36"
+            btn5.style.color = "#FF9F36"
+        }
+        function openImpossibles() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            btn1.style.color = "#FF9F36"
+            btn2.style.color = "#5B4B92"
+            btn3.style.color = "#FF9F36"
+            btn4.style.color = "#FF9F36"
+            btn5.style.color = "#FF9F36"
+        }        
+        function openTimeline() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            btn1.style.color = "#FF9F36"
+            btn2.style.color = "#FF9F36"
+            btn3.style.color = "#5B4B92"
+            btn4.style.color = "#FF9F36"
+            btn5.style.color = "#FF9F36"
+        }        
+        function openCompleted() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(0)";
+            content5.style.transform = "translateX(100%)";
+            btn1.style.color = "#FF9F36"
+            btn2.style.color = "#FF9F36"
+            btn3.style.color = "#FF9F36"
+            btn4.style.color = "#5B4B92"
+            btn5.style.color = "#FF9F36"
+        }        
+        function openHistory() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(0)";
+            btn1.style.color = "#FF9F36"
+            btn2.style.color = "#FF9F36"
+            btn3.style.color = "#FF9F36"
+            btn4.style.color = "#FF9F36"
+            btn5.style.color = "#5B4B92"
+        }
+
+
+    </script>
+</body>
+</html>
