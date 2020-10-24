@@ -1,3 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap');
 *{
     box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Serif JP', serif;
+}
+.upper-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    background-color: #FBF3F3;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+.upper-container .svg{
+    transform: scale(-1,1);
+    width: 25%;
+    /* width: 190px;
+    height: 287px; */
+    margin-right: 30rem;
+}
+
+.upper-container .dream #dream{
+    width: 413px;
+    height: 115px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: regular;
+}
+.middle-container{
+    height: 50vh;
+    background-color: #FF9F36;
+    border-radius: 5px;
+    margin-top: 0;
+    display: grid;place-items: center;
+}
+.middle-container p{
+    width: 823px;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.download-container{
+    background-color: #FBF3F3;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download-container p{
+    width: 615px;
+    height: 105;
+    margin-right: 166px;
+    font-size: 40px;
+    line-height: 2.7rem;
+}
+.download-container button{
+    border: none;
+    width: 213px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FB7454;
+    border-radius: 5px;
+    box-shadow: 2px 5px 8px grey;
+}
+
+footer{
+    text-align: center;
 }
