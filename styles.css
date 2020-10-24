@@ -1,7 +1,7 @@
 :root{
     --main-color : #FF9F36;
     --text-color: black;
-    --navbar: #FB8C4D;
+    --navbar: #fb8c4b;
     --navbar-text: #5B4B92;
     --background-color: #FFFDED;
 }
@@ -27,6 +27,7 @@ header {
     /* flex-direction: row; */
     border-radius: 0px 0px 10% 10%;
     padding: 0px 30px 0px 70px;
+    
 }
 nav li {
     display: inline-block;
@@ -39,4 +40,15 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 23px;
+}
+/* a:hover {
+    position: relative;
+
+    padding: 5px 20px;
+
+    border-radius: 20px;
+    box-shadow: inset 0px 2px 12px rgb(165, 41, 41);
+} */
+a:hover {
+    color: white;
 }
