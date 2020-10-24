@@ -64,8 +64,8 @@ a:hover {
 
 .upper-container {
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center; */
+    flex-direction: column;
+    align-items: center;
     justify-content: center;    
     /* height: 100vh; */
     margin-top: 12vh;
@@ -83,14 +83,29 @@ a:hover {
     font-family: 'Marck Script', cursive;
     color: var(--navbar);
 }
-.svg {
+.svgandbutton{
+    width: 280px;
+}
+.svgandbutton img{
     transform: scale(-1,1);
-    width: 25%;
-    margin-left: 34rem;
+    width: 100%;
+    margin-left: 2rem;
 }
-.registerButton {
-    
-}
+.svgandbutton button {
+    margin: 0;
+    width: 157px;
+    height: 60px;
+    position: relative;
+    left: 3rem;
+    top: -81.9px;
+    border-radius: 3px;
+    border: none;
+    background-color:#5B4B92;
+    color: var(--background-color);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.35), inset 2px 2px 3px 1px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-weight: 500;
+    }
 
 .middle-container {
     height: 50vh;
