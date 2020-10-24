@@ -22,6 +22,7 @@ body {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     padding-top: 6px;
+    color: white;
 }
 header {
     background-color: var(--navbar);
@@ -88,8 +89,19 @@ a:hover {
     width: 25%;
     margin-left: 34rem;
 }
+.registerButton button {
+    border: none;
+    width: 350px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #FB7454;
+    border-radius: 5px;
+    /* box-shadow: 2px 5px 8px grey; */
+}
 .registerButton {
-    
+    position: absolute;
+    padding-bottom: 200px; /* how to move??? */
 }
 
 .middle-container {
