@@ -15,102 +15,238 @@
 }
 body {
     background-color: var(--background-color);
+    text-align: center;
+}
+.logo {
+    width: 65px;
+    /* -webkit-transform: scaleX(-1); */
+    /* transform: scaleX(-1); */
+    padding-top: 6px;
+    /* filter: invert(31%) sepia(49%) saturate(612%) hue-rotate(213deg) brightness(93%) contrast(94%); */
+    position: absolute;
+    /* text-align: center; */
+    left: 50%;
+    transform: translate(-50%);}
+header {
+    top: 0;
+    margin: 0;
+    width: 100%;
+    background: var(--navbar);
+    float: left;
+    position: fixed;
+    text-decoration: none;
+    z-index: 100;
+    border-radius: 0px 0px 15% 15%;
+}
+nav {
+    display: flex;
+    width: 100%;
+    /* height: 10%; */
+    justify-content: center;
+    position: relative;
+    align-self: center;
+}
+#fix {
+    margin-left: 50px;
+}
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+a:hover {
+    color: black;
 }
 
-.avatar{
-    width: 900px;
-    height: 300px;
-    margin: 30px auto 5px auto;
+
+.upper-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    box-shadow: 1px 1px 3px 1px rgba(94, 94, 94, 0.35);
-    border-radius: 10px;
-    }
-    .avatar .name{
-        font-size: 20px;
-        font-weight:600;
-    }
-    .avatar .editBackground{
-        position: relative;
-        left: 22rem;
-    }
-    .avatar button{
-        border: none;
-        width: 150px;
-        background-color: var(--background-color);
-        padding:15px;
-        border-radius: 30px;
-        border: 3px solid #480948;
+    justify-content: center;    
+    /* height: 100vh; */
+    margin-top: 16vh;
+    margin-bottom: 5vh;
+}
 
-    }
-.avatar .pic{
-    border-radius: 50%;
-    background-color: #cccccc;
-    width: 2em;
-    height: 2em;
+.upper-container .dream #dream {
+    width: 613px;
+    height: auto;
+    font-size: 40px;
+    line-height: 4rem;
+    font-weight: regular;
+    letter-spacing: 2px;
+}
+#buddy {
+    font-family: 'Marck Script', cursive;
+    color: var(--navbar);
+    font-size: 45px;
+}
+.svgandbutton{
+    width: 580px;
+    display: flex;
+    justify-content: center;
+}
+.svgandbutton img{
+    transform: scale(-1,1);
+    /* width: 100%; */
+    padding-left: 8rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.svgandbutton input {
+    /* margin: 0; */
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    /* bottom: 0; */
+    /* left: 3rem; */
+    /* top: -81.9px; */
+    border-radius: 3px;
+    border: none;
+    background-color:#5B4B92;
+    color: var(--background-color);
+    /* box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.35), inset 2px 2px 3px 1px rgba(0, 0, 0, 0.25); */
+    font-size: 2rem;
+    align-self: flex-end;
+    margin-bottom: 2.2rem;
+}
+.svgandbutton input:hover {
+    cursor: pointer;
+    box-shadow: 2px 5px 8px grey;
+}
+.middle-container {
+    height: 50vh;
+    background-color: #FF9F36;
+    border-radius: 5px;
+    margin-top: 0;
+    display: grid;place-items: center;
+    color: var(--background-color);
+
+}
+.middle-container h1 {
+    width: auto;
+    font-size: 40px;
+    color: black;
+    align-items: center;
+}
+.middle-container h2 {
+    color: var(--navbar-text);
+}
+#box {
+    width: 300px;
+    display: inline-block;
+    margin: 20px;
+}
+.download-container {
+    background-color: var(--background-color);
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 48px;
-    color: #ffffff;
-    box-shadow: 0px 0px 6px rgba(20, 20, 20, 0.6);
+    margin: 30px;
 }
-.hero {
-    width: 70%;
-    height: 450px;
-    position: relative;
-    margin: 80px auto;
-    overflow: hidden;
+.download-container p {
+    width: 615px;
+    height: 105;
+    margin-right: 100px;
+    font-size: 40px;
+    line-height: 2.7rem;
 }
-
-.buttonBox {
-    display: flex;
-    border-bottom: 1px solid var(--navbar-text);
-    width: auto;
-    justify-content: center;
-}
-.buttonBox button {
-    background: transparent;
-    color: var(--navbar);
+.download-container button {
     border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    margin-right: 50px;
+    width: 350px;
+    height: 90px;
     font-size: 30px;
     font-weight: bold;
+    background-color: #FB7454;
+    border-radius: 5px;
 }
-.buttonBox button:hover {
-    color: var(--navbar);
+.download-container button:hover {
+    box-shadow: 2px 5px 8px grey;
 }
-.contentRight img {
-    width: 350px;
-}
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2% auto;
-    position: absolute;
-    transform: translateX(100%);
+button:hover, .logo:hover {
+    cursor: pointer;
 }
 
-.contentLeft {
-    flex-basis: 50%;
+.register-field {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
-.contentLeft p {
-    font-size: 24px;
-    padding: 30px 0;
+.registerbox {
+    padding: 30px;
+    width: 700px;
+    height: 900px;
+    background-color:#F8A449;
+    border-radius: 20px;
+} 
+
+.register-field h1 {
+    color: #FBF3F3;
+    font-size: 45px;
+    padding-block: 10px;
+    margin: 30px;
+} 
+.register-field h3 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 45px;
+    color: #5B4B92;
+    font-size: 30px;
+    padding-block: 5px;
 }
-.contentRight {
-    flex-basis: 50%;
-    text-align: center;
+
+.register-button {
+    background-color: #FBF3F3;
+    font-size: 35px;
+    width: 545px;
+    height: 65px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    color: #5B4B92;
+    margin-top: 50px;
+    font-weight: bold;
 }
-#content1 {
-    transform: translateX(0px);
+.register-field input {
+    height: 60px;
+    width: 540px;
+    border-radius: 20px;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: #FBF3F3;
+    -moz-outline-radius: 20px;
+    border: none;
+    background-color: #F8A449;
+    font-size: 20px;
+    color: #FBF3F3;
+    padding: 30px; 
 }
-#btn1 {
-    color: var(--navbar-text);
+.register-field a {
+    color: #FBF3F3;
+    font-size: 20px;
+    margin: 5px; 
+}
+
+#terms-conditions{
+    height: 20px;
+    width: 45px;
+    outline: none;
+    margin: 25px;    
+}
+
+.stronk img{
+    width: 400px;
 }
