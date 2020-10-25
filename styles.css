@@ -129,11 +129,22 @@ a:hover {
     border-radius: 5px;
     margin-top: 0;
     display: grid;place-items: center;
+    color: var(--background-color);
+
 }
-.middle-container p {
-    width: 823px;
+.middle-container h1 {
+    width: auto;
     font-size: 40px;
-    color: #FFFFFF;
+    color: black;
+    align-items: center;
+}
+.middle-container h2 {
+    color: var(--navbar-text);
+}
+#box {
+    width: 300px;
+    display: inline-block;
+    margin: 20px;
 }
 .download-container {
     background-color: var(--background-color);
