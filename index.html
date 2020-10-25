@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <script defer src="js\scrollmenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script> <!-- check the version -->
+</head>
+<body>
+    <header>
+        <div>
+        <div class="logodiv">
+            <img src="pics\bunnysignWhite.svg" alt="taken from https://www.seekpng.com/ipng/u2q8u2e6w7y3e6y3_line-drawing-bunny-rabbit-at-getdrawings-bunny-drawing/" class="logo" onclick="window.location.href='index.html'"> <!-- link not working -->
+        </div>
+        <div class="flex">
+            <nav>
+                <ul>
+                    <li><a data-page="home" href="#" onclick="slowScroll('#top')">Home</a></li>
+                    <li><a data-page="whatwedo" href="#" onclick="slowScroll('#whatwedo')">What we do</a></li>
+                    <li><a data-page="download" href="#" onclick="slowScroll('#download')" id="fix">Download</a></li>
+                    <li><a data-page="signin" href="signIn.html">Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+<main>
+    <div class="upper-container" id="top">
+        <div class="dream">
+            <p id="dream">
+                Stop dreaming about your impossible dreams, and explore now with a <span id="buddy">Buddy</span>. 
+            </p>
+        </div>
+        <div class="svgandbutton">
+                <img src="pics\reaching-and-pointing.svg" alt="svg-reaching-for-goal">
+                <input type=button onClick="parent.location='Registration.html'" value='Register'>
+        </div>
+    </div>
+
+
+    <div class="middle-container" id="whatwedo">
+        <div class="what-we-do">
+            <h1>Our purpose is to make our users feel motivated to achieve whatever seemed impossible by:</h1>
+            <div class="trackingGoals" id="box">
+                <h2>
+                    Tracking your goals
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="findingBuddy" id="box">
+                <h2>
+                    Finding a buddy to work on goals
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="sharingProcess" id="box">
+                <h2>
+                    Sharing the progress
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+    </div> 
+    <div class="download-container" id="download">
+            <p id="download-text">
+                Both iOS and Android version are now available
+                for Free! 
+                Download today for better user interaction.  
+            </p>
+            <form method="get" action="./download.html">
+                <button type="submit" value="Open App">Download App</button>
+            </form>
+    </div>
+    </div>
+    <footer>
+        <p class="footer">
+            Web page created for the Technica 2020 Hackathon.
+        </p>
+    </footer>
+</main>
+</body>
+</html>
