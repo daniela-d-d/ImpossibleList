@@ -115,13 +115,13 @@ a:hover {
     background-color:#5B4B92;
     color: var(--background-color);
     /* box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.35), inset 2px 2px 3px 1px rgba(0, 0, 0, 0.25); */
-    box-shadow: 2px 5px 8px grey;
     font-size: 2rem;
     align-self: flex-end;
     margin-bottom: 2.2rem;
 }
 .svgandbutton input:hover {
     cursor: pointer;
+    box-shadow: 2px 5px 8px grey;
 }
 .middle-container {
     height: 50vh;
