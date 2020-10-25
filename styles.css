@@ -99,7 +99,7 @@ a:hover {
     justify-content: center;
     position: relative;
 }
-.svgandbutton button {
+.svgandbutton input {
     /* margin: 0; */
     width: 250px;
     height: 80px;
@@ -121,7 +121,9 @@ a:hover {
     align-self: flex-end;
     margin-bottom: 2.2rem;
 }
-
+.svgandbutton input:hover {
+    cursor: pointer;
+}
 .middle-container {
     height: 50vh;
     background-color: #FF9F36;
@@ -161,6 +163,77 @@ a:hover {
 button:hover {
     cursor: pointer;
 }
-/* footer{
-    text-align: center;
-} */
+
+.register-field {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.registerbox {
+    padding: 30px;
+    width: 700px;
+    height: 900px;
+    background-color:#F8A449;
+    border-radius: 20px;
+} 
+
+.register-field h1 {
+    color: #FBF3F3;
+    font-size: 45px;
+    padding-block: 10px;
+    margin: 30px;
+} 
+.register-field h3 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 45px;
+    color: #5B4B92;
+    font-size: 30px;
+    padding-block: 5px;
+}
+
+.register-button {
+    background-color: #FBF3F3;
+    font-size: 35px;
+    width: 545px;
+    height: 65px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    color: #5B4B92;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.register-field input {
+    height: 60px;
+    width: 540px;
+    border-radius: 20px;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: #FBF3F3;
+    -moz-outline-radius: 20px;
+    border: none;
+    background-color: #F8A449;
+    font-size: 20px;
+    color: #FBF3F3;
+    padding: 30px; 
+}
+.register-field a {
+    color: #FBF3F3;
+    font-size: 20px;
+    margin: 5px; 
+}
+
+#terms-conditions{
+    height: 20px;
+    width: 45px;
+    outline: none;
+    margin: 25px;    
+}
+
+.stronk img{
+    width: 400px;
+}
