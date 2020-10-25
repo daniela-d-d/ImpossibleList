@@ -49,6 +49,7 @@ nav ul li a {
     color: white;
     font-size: 23px;
 }
+
 /* a:hover {
     position: relative;
 
@@ -133,7 +134,7 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 .registerbox{
-    
+    box-shadow: 10px 10px 5px #C5A4AD;
     padding: 30px;
     width: 700px;
     height: 900px;
@@ -141,7 +142,21 @@ a:hover {
     border-radius: 20px;
 
 } 
-
+.registerbox input{
+    height: 60px;
+    width: 540px;
+    border-radius: 20px;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: #FBF3F3;
+    -moz-outline-radius: 20px;
+    border: none;
+    background-color: #F8A449;
+    font-size: 20px;
+    color: #FBF3F3;
+    padding: 30px;
+     
+}
 h1{
     color: #FBF3F3;
     font-size: 45px;
@@ -170,21 +185,7 @@ h3{
     margin-top: 50px;
     font-weight: bold;
 }
-input{
-    height: 60px;
-    width: 540px;
-    border-radius: 20px;
-    outline-style: solid;
-    outline-width: 5px;
-    outline-color: #FBF3F3;
-    -moz-outline-radius: 20px;
-    border: none;
-    background-color: #F8A449;
-    font-size: 20px;
-    color: #FBF3F3;
-    padding: 30px;
-     
-}
+
 a{
     color: #FBF3F3;
     font-size: 20px;
@@ -200,10 +201,51 @@ a{
 }
 
 .stronk img{
-    
- 
     width: 400px;
 }
+
+.SignInbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px #C5A4AD;
+    padding: 30px;
+    width: 700px;
+    height: 710px;
+    background-color:#F8A449;
+    border-radius: 20px;
+}
+.SignInbox input{
+    height: 60px;
+    width: 540px;
+    border-radius: 20px;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: #FBF3F3;
+    -moz-outline-radius: 20px;
+    border: none;
+    background-color: #F8A449;
+    font-size: 20px;
+    color: #FBF3F3;
+    padding: 30px;
+    margin: 20px;
+}
+.signin-button{
+    background-color: #FBF3F3;
+    font-size: 35px;
+    width: 545px;
+    height: 65px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    color: #5B4B92;
+    margin-top: 50px;
+    font-weight: bold;  
+}
+
 /* footer{
     text-align: center;
 } */
