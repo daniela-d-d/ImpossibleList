@@ -22,11 +22,15 @@ body {
     /* -webkit-transform: scaleX(-1); */
     /* transform: scaleX(-1); */
     padding-top: 6px;
+<<<<<<< HEAD
     /* filter: invert(31%) sepia(49%) saturate(612%) hue-rotate(213deg) brightness(93%) contrast(94%); */
     position: absolute;
     /* text-align: center; */
     left: 50%;
     transform: translate(-50%);}
+=======
+}
+>>>>>>> eslem
 header {
     top: 0;
     margin: 0;
@@ -68,8 +72,13 @@ a:hover {
 
 .upper-container {
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
+=======
+    /* flex-direction: column; */
+    /* align-items: center; */
+>>>>>>> eslem
     justify-content: center;    
     /* height: 100vh; */
     margin-top: 16vh;
@@ -89,6 +98,7 @@ a:hover {
     color: var(--navbar);
     font-size: 45px;
 }
+<<<<<<< HEAD
 .svgandbutton{
     width: 580px;
     display: flex;
@@ -123,6 +133,14 @@ a:hover {
     cursor: pointer;
     box-shadow: 2px 5px 8px grey;
 }
+=======
+.svg {
+    transform: scale(-1,1);
+    width: 25%;
+    margin-left: 34rem;
+}
+
+>>>>>>> eslem
 .middle-container {
     height: 50vh;
     background-color: #FF9F36;

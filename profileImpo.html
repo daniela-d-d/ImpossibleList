@@ -3,45 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./profileImpoStyle.css"> 
+    <link rel="stylesheet" href="./css/profileImpoStyle.css"> 
     <title>Document</title>
 </head>
 <body>
-    <header class="navigation">
+    <div class="navigation">
         <div class="logodiv">
             <img src="pics\bunnysign.png" alt="taken from https://www.seekpng.com/ipng/u2q8u2e6w7y3e6y3_line-drawing-bunny-rabbit-at-getdrawings-bunny-drawing/" class="logo">
         </div>
         <div class="flex">
             <nav>
                 <ul>
-                    <li><a data-page="home" href="#">Home</a></li>
+                    <li><a data-page="home" href="./index.html">Home</a></li>
                     <li><a data-page="download app" href="#">Download App</a></li>
-                    <li><a data-page="settings" href="#">Settings</a></li>
-                    <li><a data-page="log out" href="#">Log out</a></li>
+                    <li><a data-page="settings" href="./download.html">Settings</a></li>
+                    <li><a data-page="log out" href="./download.html">Log out</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <div class="profile">
-        <div class="avatar">
-            <div class="pic">JD</div>
-            <div class="name">John Doe</div>
-            <div class="discription">
-                <p> here's a personal description
-                </p>
-            </div>
-            <div class="editBackground">
-                <button> edit profile</button>
-            </div>
-            <div class="content">
-
-            </div>
-        </div>
-       
-        <div class="search-follow">
-        <button> Search Impossibilities...</button>
-        </div>
-        
     </div>
+    <div class="content">
+        <div class="profile">
+            <div class="avatar">
+                <div class="pic">JD</div>
+                <div class="name">John Doe</div>
+                <div class="discription">
+                    <p> here's a personal description
+                    </p>
+                </div>
+                <div class="editBackground">
+                    <button> edit profile</button>
+                </div>
+                
+            </div>
+            <div class="contentProfile">
+                <p>This profile has no updates yet</p>
+            </div>
+        </div>
+        <div class="search-follow">
+            <input type="search" name="" id="" placeholder="Search for impossibilities"> 
+        </div>
+    </div>
+   
 </body>
 </html>
