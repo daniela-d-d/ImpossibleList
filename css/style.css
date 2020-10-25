@@ -69,6 +69,7 @@ a:hover {
     justify-content: center;    
     margin-top: 16vh;
     margin-bottom: 5vh;
+    height: 100vh;
 }
 .upper-container .dream #dream {
     width: 613px;
@@ -90,22 +91,27 @@ a:hover {
 }
 .svgandbutton img{
     transform: scale(-1,1);
-    padding-left: 8rem;
+    padding-left: 1rem;
     display: flex;
+    width: 500px;
     justify-content: center;
     position: relative;
+    margin-bottom: 20px;
 }
 .svgandbutton input {
-    width: 300px;
-    height: 85px;
-    position: absolute;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    z-index: 9999;
     border-radius: 5px;
     border: none;
     background-color:#5B4B92;
     color: var(--background-color);
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     align-self: flex-end;
-    margin-bottom: 1.9rem;
+    bottom: 3.3rem;
+    right: 14.1rem;
+
 }
 .svgandbutton input:hover {
     cursor: pointer;
