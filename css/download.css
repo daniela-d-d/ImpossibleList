@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --main-color : #FF9F36;
+    --text-color: black;
+    --navbar: #fb8c4b;
+    --navbar-text: #5B4B92;
+    --background-color: #FBF3F3;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo {
+    width: 65px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding-top: 6px;
+    color: white;
+}
+header {
+    background-color: var(--navbar);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 0px 10% 10%;
+    padding: 0px 30px 0px 70px;
+    
+}
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+.consctruction {
+    display: grid;
+    place-items: center;
+}
+.img{
+    display: grid;
+    place-items: center;
+}
+.img img{
+    width: 500px;
+    text-align: center;
+}
+.underConsctruction p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    color: var(--navbar-text);
+
+}
