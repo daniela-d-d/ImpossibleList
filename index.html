@@ -5,49 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <script defer src="scrollmenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script> <!-- check the version -->
 </head>
 <body>
     <header>
+        <div>
         <div class="logodiv">
-            <img src="pics\bunnysignWhite.svg" alt="taken from https://www.seekpng.com/ipng/u2q8u2e6w7y3e6y3_line-drawing-bunny-rabbit-at-getdrawings-bunny-drawing/" class="logo">
+            <img src="pics\bunnysignWhite.svg" alt="taken from https://www.seekpng.com/ipng/u2q8u2e6w7y3e6y3_line-drawing-bunny-rabbit-at-getdrawings-bunny-drawing/" class="logo" onclick="window.location.href='index.html'">
         </div>
         <div class="flex">
             <nav>
                 <ul>
-                    <li><a data-page="home" href="#">Home</a></li>
-                    <li><a data-page="whatwedo" href="#">What we do</a></li>
-                    <li><a data-page="download" href="#">Download</a></li>
+                    <li><a data-page="home" href="#" onclick="slowScroll('#top')">Home</a></li>
+                    <li><a data-page="whatwedo" href="#" onclick="slowScroll('#whatwedo')">What we do</a></li>
+                    <li><a data-page="download" href="#" onclick="slowScroll('#download')" id="fix">Download</a></li>
                     <li><a data-page="signin" href="#">Sign in</a></li>
                 </ul>
             </nav>
         </div>
+        </div>
     </header>
 <main>
-    <div class="upper-container">
+    <div class="upper-container" id="top">
         <div class="dream">
             <p id="dream">
                 Stop dreaming about your impossible dreams, and explore now with a <span id="buddy">Buddy</span>. 
             </p>
         </div>
         <div class="svgandbutton">
-           
                 <img src="./reaching-and-pointing.svg" alt="svg-reaching-for-goal">
                 <input type=button onClick="parent.location='Registration.html'" value='Register'>
-            
         </div>
     </div>
 
 
-    <div class="middle-container">
+    <div class="middle-container" id="whatwedo">
         <p class="what-we-do">
             Our purpose is to make our users feel motivated to achieve whatever seemed impossible by:
             <div class="track">
-                
             </div>
         </p>
     </div> 
-    <div class="download-container">
+    <div class="download-container" id="download">
             <p id="download-text">
                 Both iOS and Android version are now available
                 for Free! 
@@ -56,7 +57,6 @@
             <form method="get" action="/page2">
                 <button type="submit" value="Open App">Download App</button>
             </form>
-        
     </div>
     </div>
     <footer>
